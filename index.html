@@ -132,7 +132,8 @@
                             </div>
                             <div class="d-flex px-3 mt-3 justify-content-between">
                                 <button class="btn btn-dark open-modal" data-pdf="PDF\4444.pdf">Expandieren</button>
-                                <button class="btn btn-dark download-pdf" data-pdf="PDF\4444.pdf">Herunterladen</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="\PDF\Physic.pdf">Herunterladen</button>
+                               
                             </div>
                         </div>
                     </div>
@@ -144,7 +145,18 @@
                                 <h3>Dateiinformationen</h3>
                                 <p><strong>Schule/Uni:</strong>Bayernkolleg</p>
                                 <p><strong>Lehrer:</strong>Frau Müller</p>
-                                <button class="btn btn-dark download-pdf" data-pdf="/PDF/tabl_neprav_diesliv_Deutsch.pdf">Herunterladen</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\4444.pdf">Herunterladen</button>
+                                <button class="btn-red1" id="openModal1">Beschwerde</button>
+
+                                <div id="modal1" class="modal1">
+                                    <div class="modal-content1">
+                                        <span class="close1" id="closeModal1">&times;</span>
+                                        <h3>Beschwerdeformular</h3>
+                                        <input type="email" placeholder="Enter email" required>
+                                        <input type="text" placeholder="Enter text" required>
+                                        <button id="submit1">Schicken</button>
+                                    </div>
+                                </div>
                             </div>
                             <div class="pdf-right pdf-container">
                                 <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
@@ -178,6 +190,17 @@
                                 <p><strong>Schule/Uni:</strong>TechnisheTNTU</p>
                                 <p><strong>Lehrer:</strong> Dr. Schmidt</p>
                                 <button class="btn btn-dark download-pdf" data-pdf="\PDF\Physic.pdf">Herunterladen</button>
+                                <button class="btn-red1" id="openModal1">Beschwerde</button>
+
+                                <div id="modal1" class="modal1">
+                                    <div class="modal-content1">
+                                        <span class="close1" id="closeModal1">&times;</span>
+                                        <h3>Beschwerdeformular</h3>
+                                        <input type="email" placeholder="Enter email" required>
+                                        <input type="text" placeholder="Enter text" required>
+                                        <button id="submit1">Schicken</button>
+                                    </div>
+                                </div>
                             </div>
                             <div class="pdf-right pdf-container">
                                 <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
@@ -211,6 +234,17 @@
                                 <p><strong>Schule/Uni:</strong>Bayernkolleg</p>
                                 <p><strong>Lehrer:</strong>Frau Link</p>
                                 <button class="btn btn-dark download-pdf" data-pdf="PDF\Uiuu.pdf">Herunterladen</button>
+                                <button class="btn-red1" id="openModal1">Beschwerde</button>
+
+                                <div id="modal1" class="modal1">
+                                    <div class="modal-content1">
+                                        <span class="close1" id="closeModal1">&times;</span>
+                                        <h3>Beschwerdeformular</h3>
+                                        <input type="email" placeholder="Enter email" required>
+                                        <input type="text" placeholder="Enter text" required>
+                                        <button id="submit1">Schicken</button>
+                                    </div>
+                                </div>
                             </div>
                             <div class="pdf-right pdf-container">
                                 <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
@@ -244,6 +278,17 @@
                                 <p><strong>Schule/Uni:</strong>TechnisheTNTU</p>
                                 <p><strong>Lehrer:</strong> Dr. Toump</p>
                                 <button class="btn btn-dark download-pdf" data-pdf="PDF\Gggg.pdf">Herunterladen</button>
+                                <button class="btn-red1" id="openModal1">Beschwerde</button>
+
+                                <div id="modal1" class="modal1">
+                                    <div class="modal-content1">
+                                        <span class="close1" id="closeModal1">&times;</span>
+                                        <h3>Beschwerdeformular</h3>
+                                        <input type="email" placeholder="Enter email" required>
+                                        <input type="text" placeholder="Enter text" required>
+                                        <button id="submit1">Schicken</button>
+                                    </div>
+                                </div>
                             </div>
                             <div class="pdf-right pdf-container">
                                 <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
@@ -1008,6 +1053,25 @@
             document.body.removeChild(a);
         });
     });
+
+
+            const openModal1 = document.getElementById("openModal1");
+        const closeModal1 = document.getElementById("closeModal1");
+        const modal1 = document.getElementById("modal1");
+
+        openModal1.addEventListener("click", () => {
+            modal1.style.display = "block";
+        });
+
+        closeModal1.addEventListener("click", () => {
+            modal1.style.display = "none";
+        });
+
+        window.addEventListener("click", (e) => {
+            if (e.target === modal1) {
+                modal1.style.display = "none";
+            }
+        });
     </script>
 </body>
 </html>
