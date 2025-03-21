@@ -1,0 +1,502 @@
+html, body{
+    margin: 0;
+    padding: 0;
+
+    font-family: "Inter";
+
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  div{
+    text-decoration: none;
+  }
+
+  header{
+    background: rgba(17, 17, 17, 1);
+    border-bottom: 1px solid rgba(35, 35, 35, 1);
+    z-index: 5000;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 3px 10px 0.5px rgba(0, 0, 0, 0.5);
+
+    z-index: 5;
+
+}
+
+.header-name{
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.headerScale{
+  transition: transform 0.3s;
+}
+
+.headerScale:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+  .header-menu{
+    color: rgb(163, 160, 160);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: center;
+  }
+
+  .userInter{
+
+    display: flex;
+
+    margin-right: 24px;
+  }
+
+  .userInter div{
+    padding: 0;
+  }
+
+.language{
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 600;
+
+  margin-right: 0;
+  justify-content: end;
+}
+
+.language div{
+  padding: 0;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  position: relative;
+}
+
+.inputSuche {
+  width: 250px;
+  height: 42px;
+  padding-left: 15px;
+  border-radius: 42px;
+  border: 2px solid #324b4e;
+  background: #ffffff;
+  outline: none;
+  position: relative;
+  transition: .3s linear;
+}
+
+.inputSuche:focus {
+  width: 80%;
+}
+
+/* button {
+  height: 26px;
+  width: 26px;
+  margin-top: 7px;
+  background: #F15B42;
+  cursor: pointer;
+}
+
+button:before {
+  content: "\f105";
+  font-family: FontAwesome;
+  color: #bb8d19;
+  font-size: 20px;
+  font-weight: bold;
+} */
+
+.backdropBlur{
+  backdrop-filter: blur(100px);
+}
+
+.topp{
+
+}
+
+.secondHeader{
+  display: flex;
+  justify-content: center;
+  width: 1000vh;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  gap: 40px;
+  position: fixed;
+
+  text-shadow:1px 1px 2px rgba(0, 0, 0, 0.2);
+
+  z-index: 1000;
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+  z-index: 4;
+}
+
+.secondHeaderIteam {
+  padding: 10px 20px; 
+  cursor: pointer; 
+  position: relative;
+  white-space: nowrap;
+
+  color: black;
+
+}
+
+.secondHeaderIteam::after {
+  content: ''; 
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  top: 40px;
+  height: 2px; 
+  background-color: #000000;
+  visibility: hidden;
+  transform: scaleX(0); 
+  transition: transform 0.3s ease, visibility 0.3s; 
+}
+
+.secondHeaderIteam:hover::after {
+  visibility: visible; 
+  transform: scaleX(1); 
+}
+
+.action{
+  margin-top: 55px;
+}
+
+main{
+  min-height: 100vh;
+}
+
+
+footer{
+  background: rgba(17, 17, 17, 1);
+  color: rgb(255, 255, 255);
+  bottom: 10px;
+
+
+}
+
+
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url(../img/user/download.svg);
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+}
+
+
+.buttonOrder{
+
+  height: 80px;
+  border-radius: 15px;
+  font-size: 25px;
+  padding: 20px;
+  transition: 0.3s ease;
+  border: 2px solid #ffffff;
+  background-color: #313131;
+  /*background-color: #313131;*/
+  font-weight: 700;
+  color: #fafafa;
+}
+
+
+.dropMenu{
+  display: none;
+}
+
+.burger{
+  display: flex;
+  position: relative;
+  z-index: 7;
+
+  width: 16px;
+  height: 9px;
+  cursor: pointer;
+}
+
+.burger::before{
+  content: "";
+  position: absolute;
+  height: 1.5px;
+  width: 100%;
+  background: #d9d9d9;
+  /* transform: scale(1); */
+  transition: all 0.5s ease;
+  top: 0;
+}
+
+.burger::after{
+  content: "";
+  position: absolute;
+  height: 1.5px;
+  width: 100%;
+  background: #d9d9d9;
+  bottom: 0;
+  transition: all 0.5s ease;
+}
+
+.burger.active::before{
+  top: 50%;
+  transform: rotate(-45deg) translate(0,-60%);
+}
+
+.burger.active::after{
+  bottom: 50%;
+  transform: rotate(45deg) translate(0,60%);
+}
+
+.mittel{
+  position: absolute;
+  width: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  z-index: 6;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease;
+  padding-left: 40px;
+  /* padding-top: 40px; */
+}
+
+.mittel.show{
+  /* transform: translateY(0); */
+  height: 100vh;
+}
+
+.header-menu-butter{
+  font-weight: 600;
+  font-size: 26px;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding-bottom: 16px;
+}
+
+@media (max-width:1210px) {
+
+
+  .secondHeader{
+    display: none;
+  }
+
+
+  .header-menu{
+    display: none;
+  }
+
+  .userInter{
+    display: none;
+  }
+
+  .language{
+    display: none;
+  }
+
+  .dropMenu{
+    display: block;
+  }}
+
+
+@media (max-width:570px) {
+.inputSuche{
+  width: 100px;
+}
+}
+
+
+
+
+.box {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+}
+
+.box:hover {
+
+    transform: scale(1.1);
+}
+
+.title {
+  height: 57.58px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000000;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, text-decoration 0.3s ease;
+
+}
+
+.title1:hover{
+  text-decoration: underline;
+}
+
+.titleM{
+  font-size: 1.9rem;
+
+}
+
+.title{
+    color: black;
+}
+
+.text-truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+.rating {
+    font-size: 1.2rem;
+    color: #ffcc00;
+    height: 24px;
+}
+.stars {
+    color: #ffcc00;
+}
+
+.btn-dark {
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    background-color: #343a40;
+    color: white;
+    border: 2px solid #343a40;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-dark:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* Дизайн модального вікна */
+.pdf-viewer {
+    background: white;
+    width: 80%;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    position: relative;
+}
+
+/* Анімація відкриття */
+.pdf-viewer.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Ліва частина (інформація) */
+.pdf-left {
+    flex: 1;
+}
+
+/* Права частина (PDF) */
+.pdf-right {
+    flex: 2;
+    border: none; /* Прибрали рамку */
+    height: 500px;
+    overflow: hidden; /* Прибрали скролбар */
+}
+
+/* Стилі для кнопки закриття */
+.btn-close {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    position: absolute;
+    top: -40px; /* Перемістили вище */
+    right: -5px; /* Винесли за межі */
+    cursor: pointer;
+    color: white; /* Хрестик став білим */
+}
+
+.btn-close:hover {
+    color: rgb(249, 69, 69);
+}
+
+/* Затемнення головної сторінки */
+body.modal-open {
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
