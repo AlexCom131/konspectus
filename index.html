@@ -20,7 +20,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-auto">
-                        <a href=index>
+                        <a >
                             <div class="header-name headerScale">Konspectus</div>
                         </a>
                     </div>
@@ -112,7 +112,7 @@
                 <div class="row action">
 
                     <div class="col-12 mb-5">
-                        <img th:src="@{/img/Знімок екрана 2024-06-16 000402.png}" alt="" class="img-fluid px-3">
+                        <img src="header\snapedit_1742536621265.jpeg" alt="" class="img-fluid px-3">
                     </div>
 
                     <div class="col-12 mb-3 title titleM">
@@ -121,7 +121,7 @@
 
                     <div class="col-lg-3 col-sm-6 mb-3">
                         <div class="box pb-3 d-flex flex-column justify-content-between" data-summary-id="1">
-                            <div class="px-3 title title1">Tabelle der unregelmäßigen deutschen Verben</div>
+                            <div class="px-3 title ">Tabelle der unregelmäßigen deutschen Verben</div>
                             <div class="px-3 mt-2 d-flex justify-content-start">
                                 <span class="text-muted">Bayernkolleg </span>
                                 <span class="text-muted">//</span>
@@ -131,8 +131,8 @@
                                 <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                             </div>
                             <div class="d-flex px-3 mt-3 justify-content-between">
-                                <button class="btn btn-dark open-modal" data-pdf="/PDF/tabl_neprav_diesliv_Deutsch.pdf">Expandieren</button>
-                                <button class="btn btn-dark download-pdf" data-pdf="/PDF/tabl_neprav_diesliv_Deutsch.pdf">Herunterladen</button>
+                                <button class="btn btn-dark open-modal" data-pdf="PDF\4444.pdf">Expandieren</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\4444.pdf">Herunterladen</button>
                             </div>
                         </div>
                     </div>
@@ -142,8 +142,8 @@
                             <button class="btn-close" onclick="closeModal()">✖</button>
                             <div class="pdf-left">
                                 <h3>Dateiinformationen</h3>
-                                <p><strong>Schule/Uni:</strong> Bayern</p>
-                                <p><strong>Lehrer:</strong>Frau Evers</p>
+                                <p><strong>Schule/Uni:</strong>Bayernkolleg</p>
+                                <p><strong>Lehrer:</strong>Frau Müller</p>
                                 <button class="btn btn-dark download-pdf" data-pdf="/PDF/tabl_neprav_diesliv_Deutsch.pdf">Herunterladen</button>
                             </div>
                             <div class="pdf-right pdf-container">
@@ -187,11 +187,110 @@
 
                     <div class="col-lg-3 col-sm-6 mb-3">
                         <div class="box pb-3 d-flex flex-column justify-content-between" data-summary-id="1">
-                            <div class="px-3 title">Документ 1</div>
+                            <div class="px-3 title ">Wurzel: Erklärung und Beispiel</div>
                             <div class="px-3 mt-2 d-flex justify-content-start">
-                                <span class="text-muted">Університет</span>
+                                <span class="text-muted">Bayernkolleg </span>
                                 <span class="text-muted">//</span>
-                                <span class="text-muted">Професор</span>
+                                <span class="text-muted">Frau Link</span>
+                            </div>
+                            <div class="px-3 mt-2 rating">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                            <div class="d-flex px-3 mt-3 justify-content-between">
+                                <button class="btn btn-dark open-modal" data-pdf="PDF\Uiuu.pdf">Expandieren</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Uiuu.pdf">Herunterladen</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overlay" id="pdfModal">
+                        <div class="pdf-viewer">
+                            <button class="btn-close" onclick="closeModal()">✖</button>
+                            <div class="pdf-left">
+                                <h3>Dateiinformationen</h3>
+                                <p><strong>Schule/Uni:</strong>Bayernkolleg</p>
+                                <p><strong>Lehrer:</strong>Frau Link</p>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Uiuu.pdf">Herunterladen</button>
+                            </div>
+                            <div class="pdf-right pdf-container">
+                                <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="box pb-3 d-flex flex-column justify-content-between" data-summary-id="1">
+                            <div class="px-3 title">Die Stoffe und ihre Eigenschaften</div>
+                            <div class="px-3 mt-2 d-flex justify-content-start">
+                                <span class="text-muted">TechnisheTNTU</span>
+                                <span class="text-muted">//</span>
+                                <span class="text-muted">Herr Toump</span>
+                            </div>
+                            <div class="px-3 mt-2 rating">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                            <div class="d-flex px-3 mt-3 justify-content-between">
+                                <button class="btn btn-dark open-modal" data-pdf="PDF\Gggg.pdf">Expandieren</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Gggg.pdf">Herunterladen</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overlay" id="pdfModal">
+                        <div class="pdf-viewer">
+                            <button class="btn-close" onclick="closeModal()">✖</button>
+                            <div class="pdf-left">
+                                <h3>Dateiinformationen</h3>
+                                <p><strong>Schule/Uni:</strong>TechnisheTNTU</p>
+                                <p><strong>Lehrer:</strong> Dr. Toump</p>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Gggg.pdf">Herunterladen</button>
+                            </div>
+                            <div class="pdf-right pdf-container">
+                                <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="box pb-3 d-flex flex-column justify-content-between" data-summary-id="1">
+                            <div class="px-3 title title1">Tabelle der unregelmäßigen deutschen Verben</div>
+                            <div class="px-3 mt-2 d-flex justify-content-start">
+                                <span class="text-muted">Bayernkolleg </span>
+                                <span class="text-muted">//</span>
+                                <span class="text-muted">Frau Müller</span>
+                            </div>
+                            <div class="px-3 mt-2 rating">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                            <div class="d-flex px-3 mt-3 justify-content-between">
+                                <button class="btn btn-dark open-modal" data-pdf="/PDF/tabl_neprav_diesliv_Deutsch.pdf">Expandieren</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="/PDF/tabl_neprav_diesliv_Deutsch.pdf">Herunterladen</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overlay" id="pdfModal">
+                        <div class="pdf-viewer">
+                            <button class="btn-close" onclick="closeModal()">✖</button>
+                            <div class="pdf-left">
+                                <h3>Dateiinformationen</h3>
+                                <p><strong>Schule/Uni:</strong>Bayernkolleg</p>
+                                <p><strong>Lehrer:</strong>Frau Müller</p>
+                                <button class="btn btn-dark download-pdf" data-pdf="/PDF/tabl_neprav_diesliv_Deutsch.pdf">Herunterladen</button>
+                            </div>
+                            <div class="pdf-right pdf-container">
+                                <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="box pb-3 d-flex flex-column justify-content-between" data-summary-id="1">
+                            <div class="px-3 title">Mechanik: Lere von der Bewegung</div>
+                            <div class="px-3 mt-2 d-flex justify-content-start">
+                                <span class="text-muted">TechnisheTNTU</span>
+                                <span class="text-muted">//</span>
+                                <span class="text-muted">Herr Samp</span>
                             </div>
                             <div class="px-3 mt-2 rating">
                                 <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
@@ -208,9 +307,9 @@
                             <button class="btn-close" onclick="closeModal()">✖</button>
                             <div class="pdf-left">
                                 <h3>Dateiinformationen</h3>
-                                <p><strong>Університет:</strong> ТУ Дрезден</p>
-                                <p><strong>Професор:</strong> Dr. Schmidt</p>
-                                <button class="btn btn-dark download-pdf" data-pdf="sample.pdf">Herunterladen</button>
+                                <p><strong>Schule/Uni:</strong>TechnisheTNTU</p>
+                                <p><strong>Lehrer:</strong> Dr. Schmidt</p>
+                                <button class="btn btn-dark download-pdf" data-pdf="\PDF\Physic.pdf">Herunterladen</button>
                             </div>
                             <div class="pdf-right pdf-container">
                                 <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
@@ -220,18 +319,18 @@
 
                     <div class="col-lg-3 col-sm-6 mb-3">
                         <div class="box pb-3 d-flex flex-column justify-content-between" data-summary-id="1">
-                            <div class="px-3 title">Документ 1</div>
+                            <div class="px-3 title">Die Stoffe und ihre Eigenschaften</div>
                             <div class="px-3 mt-2 d-flex justify-content-start">
-                                <span class="text-muted">Університет</span>
+                                <span class="text-muted">TechnisheTNTU</span>
                                 <span class="text-muted">//</span>
-                                <span class="text-muted">Професор</span>
+                                <span class="text-muted">Herr Toump</span>
                             </div>
                             <div class="px-3 mt-2 rating">
                                 <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                             </div>
                             <div class="d-flex px-3 mt-3 justify-content-between">
-                                <button class="btn btn-dark open-modal" data-pdf="kopii_125248.pdf">Expandieren</button>
-                                <button class="btn btn-dark download-pdf" data-pdf="kopii_125248.pdf">Herunterladen</button>
+                                <button class="btn btn-dark open-modal" data-pdf="PDF\Gggg.pdf">Expandieren</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Gggg.pdf">Herunterladen</button>
                             </div>
                         </div>
                     </div>
@@ -240,10 +339,10 @@
                         <div class="pdf-viewer">
                             <button class="btn-close" onclick="closeModal()">✖</button>
                             <div class="pdf-left">
-                                <h3>Інформація про файл</h3>
-                                <p><strong>Університет:</strong> ТУ Дрезден</p>
-                                <p><strong>Професор:</strong> Dr. Schmidt</p>
-                                <button class="btn btn-dark download-pdf" data-pdf="sample.pdf">Herunterladen</button>
+                                <h3>Dateiinformationen</h3>
+                                <p><strong>Schule/Uni:</strong>TechnisheTNTU</p>
+                                <p><strong>Lehrer:</strong> Dr. Toump</p>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Gggg.pdf">Herunterladen</button>
                             </div>
                             <div class="pdf-right pdf-container">
                                 <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
@@ -253,18 +352,18 @@
 
                     <div class="col-lg-3 col-sm-6 mb-3">
                         <div class="box pb-3 d-flex flex-column justify-content-between" data-summary-id="1">
-                            <div class="px-3 title">Документ 1</div>
+                            <div class="px-3 title">Die Stoffe und ihre Eigenschaften</div>
                             <div class="px-3 mt-2 d-flex justify-content-start">
-                                <span class="text-muted">Університет</span>
+                                <span class="text-muted">TechnisheTNTU</span>
                                 <span class="text-muted">//</span>
-                                <span class="text-muted">Професор</span>
+                                <span class="text-muted">Herr Toump</span>
                             </div>
                             <div class="px-3 mt-2 rating">
                                 <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                             </div>
                             <div class="d-flex px-3 mt-3 justify-content-between">
-                                <button class="btn btn-dark open-modal" data-pdf="kopii_125248.pdf">Expandieren</button>
-                                <button class="btn btn-dark download-pdf" data-pdf="kopii_125248.pdf">Herunterladen</button>
+                                <button class="btn btn-dark open-modal" data-pdf="PDF\Gggg.pdf">Expandieren</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Gggg.pdf">Herunterladen</button>
                             </div>
                         </div>
                     </div>
@@ -273,10 +372,56 @@
                         <div class="pdf-viewer">
                             <button class="btn-close" onclick="closeModal()">✖</button>
                             <div class="pdf-left">
-                                <h3>Інформація про файл</h3>
-                                <p><strong>Університет:</strong> ТУ Дрезден</p>
-                                <p><strong>Професор:</strong> Dr. Schmidt</p>
-                                <button class="btn btn-dark download-pdf" data-pdf="sample.pdf">Herunterladen</button>
+                                <h3>Dateiinformationen</h3>
+                                <p><strong>Schule/Uni:</strong>TechnisheTNTU</p>
+                                <p><strong>Lehrer:</strong> Dr. Toump</p>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Gggg.pdf">Herunterladen</button>
+                            </div>
+                            <div class="pdf-right pdf-container">
+                                <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+
+                </div>
+
+
+
+                <div class="row action">
+
+                    <div class="col-12 mb-3 title titleM">
+                        Beliebt
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="box pb-3 d-flex flex-column justify-content-between" data-summary-id="1">
+                            <div class="px-3 title ">Tabelle der unregelmäßigen deutschen Verben</div>
+                            <div class="px-3 mt-2 d-flex justify-content-start">
+                                <span class="text-muted">Bayernkolleg </span>
+                                <span class="text-muted">//</span>
+                                <span class="text-muted">Frau Müller</span>
+                            </div>
+                            <div class="px-3 mt-2 rating">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                            <div class="d-flex px-3 mt-3 justify-content-between">
+                                <button class="btn btn-dark open-modal" data-pdf="PDF\4444.pdf">Expandieren</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\4444.pdf">Herunterladen</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overlay" id="pdfModal">
+                        <div class="pdf-viewer">
+                            <button class="btn-close" onclick="closeModal()">✖</button>
+                            <div class="pdf-left">
+                                <h3>Dateiinformationen</h3>
+                                <p><strong>Schule/Uni:</strong>Bayernkolleg</p>
+                                <p><strong>Lehrer:</strong>Frau Müller</p>
+                                <button class="btn btn-dark download-pdf" data-pdf="/PDF/tabl_neprav_diesliv_Deutsch.pdf">Herunterladen</button>
                             </div>
                             <div class="pdf-right pdf-container">
                                 <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
@@ -286,18 +431,51 @@
 
                     <div class="col-lg-3 col-sm-6 mb-3">
                         <div class="box pb-3 d-flex flex-column justify-content-between" data-summary-id="1">
-                            <div class="px-3 title">Документ 1</div>
+                            <div class="px-3 title">Mechanik: Lere von der Bewegung</div>
                             <div class="px-3 mt-2 d-flex justify-content-start">
-                                <span class="text-muted">Університет</span>
+                                <span class="text-muted">TechnisheTNTU</span>
                                 <span class="text-muted">//</span>
-                                <span class="text-muted">Професор</span>
+                                <span class="text-muted">Herr Samp</span>
+                            </div>
+                            <div class="px-3 mt-2 rating">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                            <div class="d-flex px-3 mt-3 justify-content-between">
+                                <button class="btn btn-dark open-modal" data-pdf="\PDF\Physic.pdf">Expandieren</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="\PDF\Physic.pdf">Herunterladen</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overlay" id="pdfModal">
+                        <div class="pdf-viewer">
+                            <button class="btn-close" onclick="closeModal()">✖</button>
+                            <div class="pdf-left">
+                                <h3>Dateiinformationen</h3>
+                                <p><strong>Schule/Uni:</strong>TechnisheTNTU</p>
+                                <p><strong>Lehrer:</strong> Dr. Schmidt</p>
+                                <button class="btn btn-dark download-pdf" data-pdf="\PDF\Physic.pdf">Herunterladen</button>
+                            </div>
+                            <div class="pdf-right pdf-container">
+                                <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="box pb-3 d-flex flex-column justify-content-between" data-summary-id="1">
+                            <div class="px-3 title ">Wurzel: Erklärung und Beispiel</div>
+                            <div class="px-3 mt-2 d-flex justify-content-start">
+                                <span class="text-muted">Bayernkolleg </span>
+                                <span class="text-muted">//</span>
+                                <span class="text-muted">Frau Link</span>
                             </div>
                             <div class="px-3 mt-2 rating">
                                 <span class="stars">&#9733;&#9733;&#9733;&#9733;</span>
                             </div>
                             <div class="d-flex px-3 mt-3 justify-content-between">
-                                <button class="btn btn-dark open-modal" data-pdf="kopii_125248.pdf">Expandieren</button>
-                                <button class="btn btn-dark download-pdf" data-pdf="kopii_125248.pdf">Herunterladen</button>
+                                <button class="btn btn-dark open-modal" data-pdf="PDF\Uiuu.pdf">Expandieren</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Uiuu.pdf">Herunterladen</button>
                             </div>
                         </div>
                     </div>
@@ -306,10 +484,10 @@
                         <div class="pdf-viewer">
                             <button class="btn-close" onclick="closeModal()">✖</button>
                             <div class="pdf-left">
-                                <h3>Інформація про файл</h3>
-                                <p><strong>Університет:</strong> ТУ Дрезден</p>
-                                <p><strong>Професор:</strong> Dr. Schmidt</p>
-                                <button class="btn btn-dark download-pdf" data-pdf="sample.pdf">Herunterladen</button>
+                                <h3>Dateiinformationen</h3>
+                                <p><strong>Schule/Uni:</strong>Bayernkolleg</p>
+                                <p><strong>Lehrer:</strong>Frau Link</p>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Uiuu.pdf">Herunterladen</button>
                             </div>
                             <div class="pdf-right pdf-container">
                                 <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
@@ -319,18 +497,18 @@
 
                     <div class="col-lg-3 col-sm-6 mb-3">
                         <div class="box pb-3 d-flex flex-column justify-content-between" data-summary-id="1">
-                            <div class="px-3 title">Документ 1</div>
+                            <div class="px-3 title">Die Stoffe und ihre Eigenschaften</div>
                             <div class="px-3 mt-2 d-flex justify-content-start">
-                                <span class="text-muted">Університет</span>
+                                <span class="text-muted">TechnisheTNTU</span>
                                 <span class="text-muted">//</span>
-                                <span class="text-muted">Професор</span>
+                                <span class="text-muted">Herr Toump</span>
                             </div>
                             <div class="px-3 mt-2 rating">
                                 <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                             </div>
                             <div class="d-flex px-3 mt-3 justify-content-between">
-                                <button class="btn btn-dark open-modal" data-pdf="kopii_125248.pdf">Expandieren</button>
-                                <button class="btn btn-dark download-pdf" data-pdf="kopii_125248.pdf">Herunterladen</button>
+                                <button class="btn btn-dark open-modal" data-pdf="PDF\Gggg.pdf">Expandieren</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Gggg.pdf">Herunterladen</button>
                             </div>
                         </div>
                     </div>
@@ -339,10 +517,10 @@
                         <div class="pdf-viewer">
                             <button class="btn-close" onclick="closeModal()">✖</button>
                             <div class="pdf-left">
-                                <h3>Інформація про файл</h3>
-                                <p><strong>Університет:</strong> ТУ Дрезден</p>
-                                <p><strong>Професор:</strong> Dr. Schmidt</p>
-                                <button class="btn btn-dark download-pdf" data-pdf="sample.pdf">Herunterladen</button>
+                                <h3>Dateiinformationen</h3>
+                                <p><strong>Schule/Uni:</strong>TechnisheTNTU</p>
+                                <p><strong>Lehrer:</strong> Dr. Toump</p>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Gggg.pdf">Herunterladen</button>
                             </div>
                             <div class="pdf-right pdf-container">
                                 <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
@@ -352,18 +530,18 @@
 
                     <div class="col-lg-3 col-sm-6 mb-3">
                         <div class="box pb-3 d-flex flex-column justify-content-between" data-summary-id="1">
-                            <div class="px-3 title">Документ 1</div>
+                            <div class="px-3 title title1">Tabelle der unregelmäßigen deutschen Verben</div>
                             <div class="px-3 mt-2 d-flex justify-content-start">
-                                <span class="text-muted">Університет</span>
+                                <span class="text-muted">Bayernkolleg </span>
                                 <span class="text-muted">//</span>
-                                <span class="text-muted">Професор</span>
+                                <span class="text-muted">Frau Müller</span>
                             </div>
                             <div class="px-3 mt-2 rating">
                                 <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                             </div>
                             <div class="d-flex px-3 mt-3 justify-content-between">
-                                <button class="btn btn-dark open-modal" data-pdf="kopii_125248.pdf">Expandieren</button>
-                                <button class="btn btn-dark download-pdf" data-pdf="kopii_125248.pdf">Herunterladen</button>
+                                <button class="btn btn-dark open-modal" data-pdf="/PDF/tabl_neprav_diesliv_Deutsch.pdf">Expandieren</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="/PDF/tabl_neprav_diesliv_Deutsch.pdf">Herunterladen</button>
                             </div>
                         </div>
                     </div>
@@ -372,10 +550,10 @@
                         <div class="pdf-viewer">
                             <button class="btn-close" onclick="closeModal()">✖</button>
                             <div class="pdf-left">
-                                <h3>Інформація про файл</h3>
-                                <p><strong>Університет:</strong> ТУ Дрезден</p>
-                                <p><strong>Професор:</strong> Dr. Schmidt</p>
-                                <button class="btn btn-dark download-pdf" data-pdf="sample.pdf">Herunterladen</button>
+                                <h3>Dateiinformationen</h3>
+                                <p><strong>Schule/Uni:</strong>Bayernkolleg</p>
+                                <p><strong>Lehrer:</strong>Frau Müller</p>
+                                <button class="btn btn-dark download-pdf" data-pdf="/PDF/tabl_neprav_diesliv_Deutsch.pdf">Herunterladen</button>
                             </div>
                             <div class="pdf-right pdf-container">
                                 <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
@@ -383,39 +561,102 @@
                         </div>
                     </div>
 
-
-                </div>
-
-
-
-                <div class="row action">
-
-                    <div class="col-12 mb-3 title">
-                        Хіти продаж
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="box pb-3 d-flex flex-column justify-content-between" data-summary-id="1">
+                            <div class="px-3 title">Mechanik: Lere von der Bewegung</div>
+                            <div class="px-3 mt-2 d-flex justify-content-start">
+                                <span class="text-muted">TechnisheTNTU</span>
+                                <span class="text-muted">//</span>
+                                <span class="text-muted">Herr Samp</span>
+                            </div>
+                            <div class="px-3 mt-2 rating">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                            <div class="d-flex px-3 mt-3 justify-content-between">
+                                <button class="btn btn-dark open-modal" data-pdf="\PDF\Physic.pdf">Expandieren</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="\PDF\Physic.pdf">Herunterladen</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overlay" id="pdfModal">
+                        <div class="pdf-viewer">
+                            <button class="btn-close" onclick="closeModal()">✖</button>
+                            <div class="pdf-left">
+                                <h3>Dateiinformationen</h3>
+                                <p><strong>Schule/Uni:</strong>TechnisheTNTU</p>
+                                <p><strong>Lehrer:</strong> Dr. Schmidt</p>
+                                <button class="btn btn-dark download-pdf" data-pdf="\PDF\Physic.pdf">Herunterladen</button>
+                            </div>
+                            <div class="pdf-right pdf-container">
+                                <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col-lg-3 col-sm-6 mb-sm-2 mb-3" th:each="laptop : ${popularProductLaptops}">
-                        <div class="box pb-3 d-flex flex-column justify-content-between" data-laptop-id=${laptop.id}>
-                            <img  th:src="@{${laptop.photoFileName}}" alt="" class="img-fluid px-3">
-                            <div class="px-3 nameProduct" th:text="${laptop.namelaptop}"></div>
-
-                            <div class="px-3 mt-3 character">
-                                <div class="d-inline" th:text="${laptop.gpu}"></div>
-                                <div class="d-inline">//</div>
-                                <div class="d-inline" th:text="${laptop.cdu}"></div>
-                                <div class="d-inline">//</div>
-                                <div class="d-inline" th:text="${laptop.storage}"></div>
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="box pb-3 d-flex flex-column justify-content-between" data-summary-id="1">
+                            <div class="px-3 title">Die Stoffe und ihre Eigenschaften</div>
+                            <div class="px-3 mt-2 d-flex justify-content-start">
+                                <span class="text-muted">TechnisheTNTU</span>
+                                <span class="text-muted">//</span>
+                                <span class="text-muted">Herr Toump</span>
                             </div>
-
-                            <div class="d-flex px-3 mt-3 align-items-center ">
-                                <div class="priceProduct" th:text="${laptop.price}"></div>
-                                <div class="priceProduct px-2">$</div>
-
-                                <button class="ms-auto buttonBuy">
-                                    <img class="headerScale" th:src="@{/img/header/cart-shopping-fast-svgrepo-com.png}" width="28" height="28">
-                                </button>
+                            <div class="px-3 mt-2 rating">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                             </div>
+                            <div class="d-flex px-3 mt-3 justify-content-between">
+                                <button class="btn btn-dark open-modal" data-pdf="PDF\Gggg.pdf">Expandieren</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Gggg.pdf">Herunterladen</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overlay" id="pdfModal">
+                        <div class="pdf-viewer">
+                            <button class="btn-close" onclick="closeModal()">✖</button>
+                            <div class="pdf-left">
+                                <h3>Dateiinformationen</h3>
+                                <p><strong>Schule/Uni:</strong>TechnisheTNTU</p>
+                                <p><strong>Lehrer:</strong> Dr. Toump</p>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Gggg.pdf">Herunterladen</button>
+                            </div>
+                            <div class="pdf-right pdf-container">
+                                <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="box pb-3 d-flex flex-column justify-content-between" data-summary-id="1">
+                            <div class="px-3 title">Die Stoffe und ihre Eigenschaften</div>
+                            <div class="px-3 mt-2 d-flex justify-content-start">
+                                <span class="text-muted">TechnisheTNTU</span>
+                                <span class="text-muted">//</span>
+                                <span class="text-muted">Herr Toump</span>
+                            </div>
+                            <div class="px-3 mt-2 rating">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                            <div class="d-flex px-3 mt-3 justify-content-between">
+                                <button class="btn btn-dark open-modal" data-pdf="PDF\Gggg.pdf">Expandieren</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Gggg.pdf">Herunterladen</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overlay" id="pdfModal">
+                        <div class="pdf-viewer">
+                            <button class="btn-close" onclick="closeModal()">✖</button>
+                            <div class="pdf-left">
+                                <h3>Dateiinformationen</h3>
+                                <p><strong>Schule/Uni:</strong>TechnisheTNTU</p>
+                                <p><strong>Lehrer:</strong> Dr. Toump</p>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Gggg.pdf">Herunterladen</button>
+                            </div>
+                            <div class="pdf-right pdf-container">
+                                <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
+                            </div>
                         </div>
                     </div>
 
@@ -423,32 +664,271 @@
 
                 <div class="row action">
 
-                    <div class="col-12 mb-3 title">
-                        Рекомендації для Вас
+                    <div class="col-12 mb-3 title titleM">
+                        Empfehlungen für Sie
                     </div>
 
-                    <div class="col-lg-3 col-sm-6 mb-sm-2 mb-3" th:each="laptop : ${recommendProductLaptops}">
-                        <div class="box pb-3 d-flex flex-column justify-content-between">
-                            <img  th:src="@{${laptop.photoFileName}}" alt="" class="img-fluid px-3">
-                            <div class="px-3 nameProduct"></div>
-
-                            <div class="px-3 mt-3 character">
-                                <div class="d-inline" th:text="${laptop.gpu}"></div>
-                                <div class="d-inline">//</div>
-                                <div class="d-inline" th:text="${laptop.cdu}"></div>
-                                <div class="d-inline">//</div>
-                                <div class="d-inline" th:text="${laptop.storage}"></div>
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="box pb-3 d-flex flex-column justify-content-between" data-summary-id="1">
+                            <div class="px-3 title ">Tabelle der unregelmäßigen deutschen Verben</div>
+                            <div class="px-3 mt-2 d-flex justify-content-start">
+                                <span class="text-muted">Bayernkolleg </span>
+                                <span class="text-muted">//</span>
+                                <span class="text-muted">Frau Müller</span>
                             </div>
-
-                            <div class="d-flex px-3 mt-3 align-items-center ">
-                                <div class="priceProduct" th:text="${laptop.price}"></div>
-                                <div class="priceProduct px-2">$</div>
-
-                                <button class="ms-auto buttonBuy">
-                                    <img class="headerScale" th:src="@{/img/header/cart-shopping-fast-svgrepo-com.png}" width="28" height="28">
-                                </button>
+                            <div class="px-3 mt-2 rating">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                             </div>
+                            <div class="d-flex px-3 mt-3 justify-content-between">
+                                <button class="btn btn-dark open-modal" data-pdf="PDF\4444.pdf">Expandieren</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\4444.pdf">Herunterladen</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overlay" id="pdfModal">
+                        <div class="pdf-viewer">
+                            <button class="btn-close" onclick="closeModal()">✖</button>
+                            <div class="pdf-left">
+                                <h3>Dateiinformationen</h3>
+                                <p><strong>Schule/Uni:</strong>Bayernkolleg</p>
+                                <p><strong>Lehrer:</strong>Frau Müller</p>
+                                <button class="btn btn-dark download-pdf" data-pdf="/PDF/tabl_neprav_diesliv_Deutsch.pdf">Herunterladen</button>
+                            </div>
+                            <div class="pdf-right pdf-container">
+                                <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="box pb-3 d-flex flex-column justify-content-between" data-summary-id="1">
+                            <div class="px-3 title">Mechanik: Lere von der Bewegung</div>
+                            <div class="px-3 mt-2 d-flex justify-content-start">
+                                <span class="text-muted">TechnisheTNTU</span>
+                                <span class="text-muted">//</span>
+                                <span class="text-muted">Herr Samp</span>
+                            </div>
+                            <div class="px-3 mt-2 rating">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                            <div class="d-flex px-3 mt-3 justify-content-between">
+                                <button class="btn btn-dark open-modal" data-pdf="\PDF\Physic.pdf">Expandieren</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="\PDF\Physic.pdf">Herunterladen</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overlay" id="pdfModal">
+                        <div class="pdf-viewer">
+                            <button class="btn-close" onclick="closeModal()">✖</button>
+                            <div class="pdf-left">
+                                <h3>Dateiinformationen</h3>
+                                <p><strong>Schule/Uni:</strong>TechnisheTNTU</p>
+                                <p><strong>Lehrer:</strong> Dr. Schmidt</p>
+                                <button class="btn btn-dark download-pdf" data-pdf="\PDF\Physic.pdf">Herunterladen</button>
+                            </div>
+                            <div class="pdf-right pdf-container">
+                                <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="box pb-3 d-flex flex-column justify-content-between" data-summary-id="1">
+                            <div class="px-3 title ">Wurzel: Erklärung und Beispiel</div>
+                            <div class="px-3 mt-2 d-flex justify-content-start">
+                                <span class="text-muted">Bayernkolleg </span>
+                                <span class="text-muted">//</span>
+                                <span class="text-muted">Frau Link</span>
+                            </div>
+                            <div class="px-3 mt-2 rating">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                            <div class="d-flex px-3 mt-3 justify-content-between">
+                                <button class="btn btn-dark open-modal" data-pdf="PDF\Uiuu.pdf">Expandieren</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Uiuu.pdf">Herunterladen</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overlay" id="pdfModal">
+                        <div class="pdf-viewer">
+                            <button class="btn-close" onclick="closeModal()">✖</button>
+                            <div class="pdf-left">
+                                <h3>Dateiinformationen</h3>
+                                <p><strong>Schule/Uni:</strong>Bayernkolleg</p>
+                                <p><strong>Lehrer:</strong>Frau Link</p>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Uiuu.pdf">Herunterladen</button>
+                            </div>
+                            <div class="pdf-right pdf-container">
+                                <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="box pb-3 d-flex flex-column justify-content-between" data-summary-id="1">
+                            <div class="px-3 title">Die Stoffe und ihre Eigenschaften</div>
+                            <div class="px-3 mt-2 d-flex justify-content-start">
+                                <span class="text-muted">TechnisheTNTU</span>
+                                <span class="text-muted">//</span>
+                                <span class="text-muted">Herr Toump</span>
+                            </div>
+                            <div class="px-3 mt-2 rating">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                            <div class="d-flex px-3 mt-3 justify-content-between">
+                                <button class="btn btn-dark open-modal" data-pdf="PDF\Gggg.pdf">Expandieren</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Gggg.pdf">Herunterladen</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overlay" id="pdfModal">
+                        <div class="pdf-viewer">
+                            <button class="btn-close" onclick="closeModal()">✖</button>
+                            <div class="pdf-left">
+                                <h3>Dateiinformationen</h3>
+                                <p><strong>Schule/Uni:</strong>TechnisheTNTU</p>
+                                <p><strong>Lehrer:</strong> Dr. Toump</p>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Gggg.pdf">Herunterladen</button>
+                            </div>
+                            <div class="pdf-right pdf-container">
+                                <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="box pb-3 d-flex flex-column justify-content-between" data-summary-id="1">
+                            <div class="px-3 title title1">Tabelle der unregelmäßigen deutschen Verben</div>
+                            <div class="px-3 mt-2 d-flex justify-content-start">
+                                <span class="text-muted">Bayernkolleg </span>
+                                <span class="text-muted">//</span>
+                                <span class="text-muted">Frau Müller</span>
+                            </div>
+                            <div class="px-3 mt-2 rating">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                            <div class="d-flex px-3 mt-3 justify-content-between">
+                                <button class="btn btn-dark open-modal" data-pdf="/PDF/tabl_neprav_diesliv_Deutsch.pdf">Expandieren</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="/PDF/tabl_neprav_diesliv_Deutsch.pdf">Herunterladen</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overlay" id="pdfModal">
+                        <div class="pdf-viewer">
+                            <button class="btn-close" onclick="closeModal()">✖</button>
+                            <div class="pdf-left">
+                                <h3>Dateiinformationen</h3>
+                                <p><strong>Schule/Uni:</strong>Bayernkolleg</p>
+                                <p><strong>Lehrer:</strong>Frau Müller</p>
+                                <button class="btn btn-dark download-pdf" data-pdf="/PDF/tabl_neprav_diesliv_Deutsch.pdf">Herunterladen</button>
+                            </div>
+                            <div class="pdf-right pdf-container">
+                                <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="box pb-3 d-flex flex-column justify-content-between" data-summary-id="1">
+                            <div class="px-3 title">Mechanik: Lere von der Bewegung</div>
+                            <div class="px-3 mt-2 d-flex justify-content-start">
+                                <span class="text-muted">TechnisheTNTU</span>
+                                <span class="text-muted">//</span>
+                                <span class="text-muted">Herr Samp</span>
+                            </div>
+                            <div class="px-3 mt-2 rating">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                            <div class="d-flex px-3 mt-3 justify-content-between">
+                                <button class="btn btn-dark open-modal" data-pdf="\PDF\Physic.pdf">Expandieren</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="\PDF\Physic.pdf">Herunterladen</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overlay" id="pdfModal">
+                        <div class="pdf-viewer">
+                            <button class="btn-close" onclick="closeModal()">✖</button>
+                            <div class="pdf-left">
+                                <h3>Dateiinformationen</h3>
+                                <p><strong>Schule/Uni:</strong>TechnisheTNTU</p>
+                                <p><strong>Lehrer:</strong> Dr. Schmidt</p>
+                                <button class="btn btn-dark download-pdf" data-pdf="\PDF\Physic.pdf">Herunterladen</button>
+                            </div>
+                            <div class="pdf-right pdf-container">
+                                <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="box pb-3 d-flex flex-column justify-content-between" data-summary-id="1">
+                            <div class="px-3 title">Die Stoffe und ihre Eigenschaften</div>
+                            <div class="px-3 mt-2 d-flex justify-content-start">
+                                <span class="text-muted">TechnisheTNTU</span>
+                                <span class="text-muted">//</span>
+                                <span class="text-muted">Herr Toump</span>
+                            </div>
+                            <div class="px-3 mt-2 rating">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                            <div class="d-flex px-3 mt-3 justify-content-between">
+                                <button class="btn btn-dark open-modal" data-pdf="PDF\Gggg.pdf">Expandieren</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Gggg.pdf">Herunterladen</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overlay" id="pdfModal">
+                        <div class="pdf-viewer">
+                            <button class="btn-close" onclick="closeModal()">✖</button>
+                            <div class="pdf-left">
+                                <h3>Dateiinformationen</h3>
+                                <p><strong>Schule/Uni:</strong>TechnisheTNTU</p>
+                                <p><strong>Lehrer:</strong> Dr. Toump</p>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Gggg.pdf">Herunterladen</button>
+                            </div>
+                            <div class="pdf-right pdf-container">
+                                <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="box pb-3 d-flex flex-column justify-content-between" data-summary-id="1">
+                            <div class="px-3 title">Die Stoffe und ihre Eigenschaften</div>
+                            <div class="px-3 mt-2 d-flex justify-content-start">
+                                <span class="text-muted">TechnisheTNTU</span>
+                                <span class="text-muted">//</span>
+                                <span class="text-muted">Herr Toump</span>
+                            </div>
+                            <div class="px-3 mt-2 rating">
+                                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                            <div class="d-flex px-3 mt-3 justify-content-between">
+                                <button class="btn btn-dark open-modal" data-pdf="PDF\Gggg.pdf">Expandieren</button>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Gggg.pdf">Herunterladen</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overlay" id="pdfModal">
+                        <div class="pdf-viewer">
+                            <button class="btn-close" onclick="closeModal()">✖</button>
+                            <div class="pdf-left">
+                                <h3>Dateiinformationen</h3>
+                                <p><strong>Schule/Uni:</strong>TechnisheTNTU</p>
+                                <p><strong>Lehrer:</strong> Dr. Toump</p>
+                                <button class="btn btn-dark download-pdf" data-pdf="PDF\Gggg.pdf">Herunterladen</button>
+                            </div>
+                            <div class="pdf-right pdf-container">
+                                <iframe class="pdf-container" id="pdfFrame" width="100%" height="100%" style="border: none;"></iframe>
+                            </div>
                         </div>
                     </div>
 
